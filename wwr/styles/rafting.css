@@ -106,62 +106,42 @@
 ========================== */
 
     .hero {
-
         position: relative;
-
     }
 
     .hero img {
-
         width: 100%;
         height: 400px;
         object-fit: cover;
+        display: block;
     }
 
     .hero h1 {
-
         position: absolute;
-
         top: 30px;
-
         width: 100%;
-
         text-align: center;
-
         color: white;
-
-        background: rgba(0, 0, 0, .55);
-
+        background: rgba(0, 0, 0, 0.55);
         padding: 20px;
-
         font-family: var(--heading-font);
-
         letter-spacing: 2px;
-
     }
 
     .hero article {
-
+        position: absolute;
         bottom: 40px;
-
         left: 40px;
-
         right: 40px;
-
-        background: rgba(255, 255, 255, .85);
-
+        background: rgba(255, 255, 255, 0.85);
         padding: 20px;
-
     }
 
     .hero article img {
-
         float: right;
-
-        width: 80px;
-
+        width: 120px;
+        height: auto;
         margin-left: 20px;
-
     }
 
     /* ==========================
