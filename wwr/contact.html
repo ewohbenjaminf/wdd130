@@ -1,49 +1,130 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us</title>
-<link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact White Water Rafting for reservations, questions, and adventure information.">
+    <meta name="author" content="Ewoh Benjamin Friday">
+
+    <title>Contact Us | White Water Rafting</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
 <header>
-<img src="images/logo.png" alt="Logo">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="trips.html">Trips</a>
-<a href="contact.html">Contact Us</a>
-</nav>
+    <img src="images/logo.png" alt="White Water Rafting Logo">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
 
 </header>
 
 <main>
 
-<h1>Contact Us</h1>
+    <section class="hero">
 
-<form>
+        <img src="images/hero.jpg" alt="White Water Rafting">
 
-<label>Name</label>
-<input type="text">
+        <h1>Contact Us</h1>
 
-<label>Email</label>
-<input type="email">
+    </section>
 
-<label>Message</label>
-<textarea></textarea>
+    <section class="contact-info">
 
-<button type="submit">Send Message</button>
+        <h2>Get in Touch</h2>
 
-</form>
+        <p>
+            We would love to hear from you! Whether you have questions about
+            our rafting adventures, reservations, pricing, or group trips,
+            our team is ready to help.
+        </p>
+
+        <p><strong>Address:</strong> 123 River Adventure Road, Rapids City</p>
+
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+
+        <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+
+    </section>
+
+    <section class="contact-form">
+
+        <h2>Send Us a Message</h2>
+
+        <form>
+
+            <label for="fullname">Full Name</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+            >
+
+            <label for="message">Message</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
 
 </main>
 
 <footer>
-<p>&copy; 2026 White Water Rafting</p>
+
+    <p>
+        &copy; 2026 White Water Rafting | Ewoh Benjamin Friday
+    </p>
+
+    <nav class="sociallinks">
+
+        <a href="https://facebook.com">
+            <img src="images/facebook.png" alt="Facebook">
+        </a>
+
+        <a href="https://instagram.com">
+            <img src="images/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://twitter.com">
+            <img src="images/twitter.png" alt="Twitter">
+        </a>
+
+    </nav>
+
 </footer>
 
 </body>
