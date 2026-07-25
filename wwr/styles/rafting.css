@@ -3,13 +3,14 @@
     --secondary-color: #01BAEF;
     --accent1-color: #006494;
     --accent2-color: #E8F1F2;
+
     --heading-font: Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 
-    --nav-background-color: #0B4F6C;
+    --nav-background-color: var(--primary-color);
     --nav-link-color: #FFFFFF;
-    --nav-hover-link-color: #E8F1F2;
-    --nav-hover-background-color: #006494;
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent1-color);
 }
 
 /* Universal Selector */
@@ -70,13 +71,17 @@ nav a:hover {
 }
 
 /* Headings */
-h1,
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
 h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
 }
 
-/* Paragraphs and Sections */
+/* Text */
 p,
 section,
 article {
@@ -84,7 +89,7 @@ article {
     padding: 8px;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -111,7 +116,7 @@ article {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(232, 241, 242, 0.9);
+    background-color: rgba(232, 241, 242, 0.90);
 }
 
 .hero article img {
@@ -134,7 +139,7 @@ section h2 {
 /* Footer */
 footer {
     margin-top: 20px;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid var(--primary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
