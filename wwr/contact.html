@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact White Water Rafting for reservations, questions, and adventure information.">
+    <meta name="description"
+      content="Contact White Water Rafting for reservations, general enquiries, and website feedback.">
     <meta name="author" content="Ewoh Benjamin Friday">
 
     <title>Contact Us | White Water Rafting</title>
@@ -14,118 +15,151 @@
 
 <body>
 
-<header>
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Logo">
 
-    <img src="images/logo.png" alt="White Water Rafting Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="trips.html">Trips</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
+    <main>
 
-</header>
+        <section class="page-title">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Whether you have questions about our rafting
+                adventures, reservations, or suggestions, our team is ready to help.</p>
+        </section>
 
-<main>
+        <section class="contact-info">
+            <h2>Company Information</h2>
 
-    <section class="hero">
+            <p><strong>Address:</strong> 123 River Road, Rapids City</p>
 
-        <img src="images/hero.jpg" alt="White Water Rafting">
+            <p><strong>Phone:</strong> +234 (555) 123-4567</p>
 
-        <h1>Contact Us</h1>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+        </section>
 
-    </section>
+        <section class="map">
+            <h2>Our Location</h2>
 
-    <section class="contact-info">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31717.760817201062!2d3.4020720451571975!3d6.429992133985375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf52dc0328169%3A0x7885a1a33689a576!2sVictoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1785198136395!5m2!1sen!2sng"
+              width="600" height="450" allowfullscreen loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
 
-        <h2>Get in Touch</h2>
+        </section>
 
-        <p>
-            We would love to hear from you! Whether you have questions about
-            our rafting adventures, reservations, pricing, or group trips,
-            our team is ready to help.
-        </p>
+        <section class="employees">
+            <h2>Meet Our Team</h2>
 
-        <p><strong>Address:</strong> 123 River Adventure Road, Rapids City</p>
+            <figure>
+                <img src="images/guide1.jpg" alt="River Guide John Smith">
+                <figcaption>
+                    <strong>John Smith</strong><br>
+                    Lead River Guide
+                </figcaption>
+            </figure>
 
-        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <figure>
+                <img src="images/guide2.jpg" alt="Reservations Manager Sarah Jones">
+                <figcaption>
+                    <strong>Sarah Jones</strong><br>
+                    Reservations Manager
+                </figcaption>
+            </figure>
 
-        <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+            <figure>
+                <img src="images/guide3.jpg" alt="Safety Instructor Michael Brown">
+                <figcaption>
+                    <strong>Michael Brown</strong><br>
+                    Safety Instructor
+                </figcaption>
+            </figure>
+        </section>
 
-    </section>
+        <section class="contact-form">
 
-    <section class="contact-form">
+            <h2>Send Us a Message</h2>
 
-        <h2>Send Us a Message</h2>
+            <form action="#" method="post">
 
-        <form>
+                <div class="form-item">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
 
-            <label for="fullname">Full Name</label>
-            <input
-                type="text"
-                id="fullname"
-                name="fullname"
-                required
-            >
+                <div class="form-item">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <label for="email">Email Address</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                required
-            >
+                <fieldset>
 
-            <label for="subject">Subject</label>
-            <input
-                type="text"
-                id="subject"
-                name="subject"
-            >
+                    <legend>Purpose of Your Message</legend>
 
-            <label for="message">Message</label>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
 
-            <textarea
-                id="message"
-                name="message"
-                rows="6"
-                required
-            ></textarea>
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
 
-            <button type="submit">
-                Send Message
-            </button>
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
 
-        </form>
+                </fieldset>
 
-    </section>
+                <div class="form-item">
+                    <label for="message">Message</label>
 
-</main>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
 
-<footer>
+                <div class="newsletter">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please subscribe me to the monthly newsletter.
+                    </label>
+                </div>
 
-    <p>
-        &copy; 2026 White Water Rafting | Ewoh Benjamin Friday
-    </p>
+                <button type="submit">Send Message</button>
 
-    <nav class="sociallinks">
+            </form>
 
-        <a href="https://facebook.com">
-            <img src="images/facebook.png" alt="Facebook">
-        </a>
+        </section>
 
-        <a href="https://instagram.com">
-            <img src="images/instagram.png" alt="Instagram">
-        </a>
+    </main>
 
-        <a href="https://twitter.com">
-            <img src="images/twitter.png" alt="Twitter">
-        </a>
+    <footer>
 
-    </nav>
+        <p>&copy; 2026 White Water Rafting | Ewoh Benjamin Friday</p>
 
-</footer>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://x.com">
+                <img src="images/twitter.png" alt="X (formerly Twitter)">
+            </a>
+        </nav>
+
+    </footer>
 
 </body>
+
 </html>
